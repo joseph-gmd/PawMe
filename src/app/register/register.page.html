@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content [fullscreen]="true">
+  <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+    <ion-list class="ion-margin">
+      <ion-list-header><ion-img src="assets/images/registerBanner.png"></ion-img></ion-list-header>
+      <ion-text><p>Please enter your personal information</p></ion-text>
+      <ion-item color="transparent">
+        <ion-label color="primary" fixed><ion-icon name="person-outline"></ion-icon></ion-label>
+        <ion-input placeholder="Fullname"></ion-input>
+      </ion-item>
+      <ion-item color="transparent">
+        <ion-label color="primary" fixed><ion-icon name="location-outline"></ion-icon></ion-label>
+        <ion-input placeholder="Address"></ion-input>
+      </ion-item>
+      <ion-item color="transparent">
+        <ion-label color="primary" fixed><ion-icon name="call-outline"></ion-icon></ion-label>
+        <ion-input type="tel" placeholder="Contact Number"></ion-input>
+      </ion-item>
+      <ion-item color="transparent">
+        <ion-label color="primary" fixed><ion-icon name="mail-outline"></ion-icon></ion-label>
+        <ion-input type="email" placeholder="Email Address"></ion-input>
+      </ion-item>
+      <ion-item color="transparent">
+        <ion-label color="primary" fixed><ion-icon name="lock-closed-outline"></ion-icon></ion-label>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+      <ion-button expand="block" fill="outline" shape="round" color="tertiary">Register</ion-button>
+      <ion-text>Have an account? </ion-text><ion-text color="tertiary" (click)="userLogin()"><u>Login</u></ion-text>
+    </ion-list>
+  </div>
 </ion-content>

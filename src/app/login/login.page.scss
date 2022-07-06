@@ -1,25 +1,32 @@
 ion-content {
-    --ion-background-color: #eedcc8;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --ion-background-color: #eedcc8;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ion-list {
+  background: transparent;
+  color: black;
+
+  ion-text {
+    font-size: small;
   }
-  
-  ion-list {
-    background: transparent;
-    color: black;
-  
-    ion-text {
-      font-size: small;
-    }
-  
-    ion-item {
-      color: black;
-    }
-  
-    ion-button {
-      text-transform: none;
-      margin: 10px;
-      
-    }
-  
+
+  ion-item {
+    border: none;
+    background-color: #fef9ea;
+    margin-bottom: 10px;
+    border-radius: 20px;
   }
+
+  ion-input {
+      color: #5a3527;
+  }
+
+  ion-button {
+    text-transform: none;
+    margin: 10px;
+    
+  }
+
+}
