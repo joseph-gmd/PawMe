@@ -1,0 +1,25 @@
+ion-content {
+    --ion-background-color: #eedcc8;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  ion-list {
+    background: transparent;
+    color: black;
+  
+    ion-text {
+      font-size: small;
+    }
+  
+    ion-item {
+      color: black;
+    }
+  
+    ion-button {
+      text-transform: none;
+      margin: 10px;
+      
+    }
+  
+  }

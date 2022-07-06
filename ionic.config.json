@@ -1,0 +1,7 @@
+{
+  "name": "PawMe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
