@@ -16,4 +16,7 @@ export class LoginPage implements OnInit {
   userRegister() {
     this.router.navigate(['/register'])
   }
+  home() {
+    this.router.navigate(['/tabs'])
+  }
 }

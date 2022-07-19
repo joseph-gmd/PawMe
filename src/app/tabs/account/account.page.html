@@ -1,9 +1,27 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>account</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-title>Account</ion-title>
+    <ion-icon name="person-circle-sharp" size="large" slot="start"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <ion-img src="assets/images/logo.png"></ion-img>
+     <ion-header lines="none">UI Tester</ion-header>
+  </ion-card>
+  <ion-list>
+    <ion-button expand="block" fill="none">
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label>Account info</ion-label>
+    </ion-button>
+    <ion-button expand="block" fill="none">
+      <ion-icon name="settings" slot="start"></ion-icon>
+      <ion-label>Settings</ion-label>
+    </ion-button>
+    <ion-button expand="block" fill="none" (click)="signOut()">
+      <ion-icon name="log-out" slot="start"></ion-icon>
+      <ion-label>Sign out</ion-label>
+    </ion-button>
+  </ion-list>
 </ion-content>

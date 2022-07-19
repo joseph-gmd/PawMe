@@ -16,4 +16,7 @@ export class RegisterPage implements OnInit {
   userLogin() {
     this.router.navigate(['/login'])
   }
+  home() {
+    this.router.navigate(['/tabs'])
+  }
 }
