@@ -16,5 +16,60 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-item lines="none" color="light">
+      <ion-label class="title">Popular</ion-label>
+      <ion-button slot="end" size="small" shape="round" color="primary">View All</ion-button>
+    </ion-item>
+    <ion-row>
+      <ion-slides [options]="slideOpts">
+        <ion-slide *ngFor="let item of popularDogs">
+          <ion-card [routerLink]="['/', 'tabs', 'items', item.id]">
+            <ion-card-header>
+              <img [src]="item?.img" />
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item lines="none">
+                <ion-label>
+                  {{item?.name}}
+                  <p><ion-text color="tertiary">{{item?.breed}}</ion-text></p>
+                </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
 
+  <ion-grid class="ion-margin-top">
+    <ion-item lines="none" color="light">
+      <ion-label class="title">Shiba Inu Dogs</ion-label>
+      <ion-button slot="end" size="small" shape="round" color="primary">View All</ion-button>
+    </ion-item>
+    <ion-row>
+      <ion-slides [options]="slideOpts1" class="featured">
+          <ion-slide class="featured" *ngFor="let item of findShiba(popularDogs)">
+            <ion-card [routerLink]="['/', 'tabs', 'items', item.id]">
+              <ion-card-header>
+                <img [src]="item?.img" />
+              </ion-card-header>
+              <ion-card-content>
+                <ion-item lines="none">
+                  <ion-label>
+                    {{item?.name}}
+                  </ion-label>
+                  <ion-text class="size" color="primary">{{item?.age}} y.o.</ion-text>
+                </ion-item>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
