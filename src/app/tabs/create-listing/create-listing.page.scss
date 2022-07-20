@@ -1,0 +1,19 @@
+ion-header {
+    background: var(--ion-color-light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    ion-toolbar {
+        padding: 5px;
+        ion-title {
+            text-align: left;
+        }
+        ion-button{
+            p {
+                font-size: x-small;
+            }
+        }
+    }
+}
+
+ion-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

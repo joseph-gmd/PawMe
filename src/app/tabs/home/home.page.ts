@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -22,12 +23,15 @@ export class HomePage implements OnInit {
     {id: 4, name: 'Eugene', breed:'Shiba Inu', gender: 'Male', age: 3, size: 'medium', img: 'assets/dogs/shiba2.jpg'}
   ];
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   findShiba(popularDogs: any []) {
     return popularDogs.filter(popularDogs => popularDogs.breed == 'Shiba Inu');
   }
 
+  createListing() {
+    this.router.navigate(['/tabs/create-listing'])
+  }
   ngOnInit() {
   }
 

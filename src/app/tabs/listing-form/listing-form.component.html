@@ -1,0 +1,75 @@
+<form [formGroup]="ListingForm">
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Upload Image</ion-label>
+      <ion-input type="file" accept="image/*"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input type="text" placeholder="Enter name" formControlName="name" [(ngModel)]="namefromuser"></ion-input>
+      <p *ngIf="ListingForm.get('name').hasError('required') && ListingForm.get('name').touched">
+        Name shouldn't be empty
+      </p>
+      <p *ngIf="ListingForm.get('name').hasError('minlength')">
+        Name must be min 2 characters long
+      </p>
+      <p *ngIf="ListingForm.get('name').hasError('maxlength')">
+        Name must be maximum 20 characters long
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Breed</ion-label>
+      <ion-input type="text" placeholder="Enter breed" formControlName="breed" [(ngModel)]="breedfromuser"></ion-input>
+      <p *ngIf="ListingForm.get('breed').hasError('required') && ListingForm.get('breed').touched">
+        Breed shouldn't be empty
+      </p>
+      <p *ngIf="ListingForm.get('breed').hasError('minlength')">
+        Breed must be min 4 characters long
+      </p>
+      <p *ngIf="ListingForm.get('breed').hasError('maxlength')">
+        Breed must be maximum 30 characters long
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Gender</ion-label>
+      <ion-select interface="alert" placeholder="Select Gender">
+        <ion-select-option value="male">Male</ion-select-option>
+        <ion-select-option value="female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Age</ion-label>
+      <ion-input type="number" placeholder="Enter age" min="0" max="30" formControlName="age" [(ngModel)]="agefromuser"></ion-input>
+      <p *ngIf="ListingForm.get('age').hasError('required') && ListingForm.get('age').touched">
+        Age shouldn't be empty
+      </p>
+      <p *ngIf="ListingForm.get('age').hasError('min')">
+        Age must be min value of 0
+      </p>
+      <p *ngIf="ListingForm.get('age').hasError('max')">
+        Age must be max value of 30
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Size</ion-label>
+      <ion-select interface="alert" placeholder="Select size">
+        <ion-select-option value="small">Small</ion-select-option>
+        <ion-select-option value="medium">Medium</ion-select-option>
+        <ion-select-option value="large">Large</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Location</ion-label>
+      <ion-input type="text" placeholder="Enter location" formControlName="location" [(ngModel)]="locationfromuser"></ion-input>
+      <p *ngIf="ListingForm.get('location').hasError('required') && ListingForm.get('location').touched">
+        Location shouldn't be empty
+      </p>
+      <p *ngIf="ListingForm.get('location').hasError('minlength')">
+        Location must be min 5 characters long
+      </p>
+      <p *ngIf="ListingForm.get('location').hasError('maxlength')">
+        Location must be maximum 30 characters long
+      </p>
+    </ion-item>
+  </ion-list>
+</form>

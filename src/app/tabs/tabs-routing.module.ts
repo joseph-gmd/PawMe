@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'dogs/:id',
     loadChildren: () => import('./dogs/dogs.module').then( m => m.DogsPageModule)
   },
+  {
+    path: 'create-listing',
+    loadChildren: () => import('./create-listing/create-listing.module').then( m => m.CreateListingPageModule)
+  },
 
 ];
 

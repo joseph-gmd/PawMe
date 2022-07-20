@@ -1,0 +1,25 @@
+ion-list {
+    background: transparent;
+    color: black;
+
+    ion-text {
+      font-size: small;
+    }
+  
+    ion-item {
+      border: 1px;
+      margin-bottom: 20px;
+      margin-top: 5px;
+      border-radius: 20px;
+      ion-input {
+        --padding-start: 10px;
+        }
+    ion-select {
+        --padding-start: 10px;
+    }
+    p {
+      color: red;
+      font-size: x-small;
+    }
+    }
+}
