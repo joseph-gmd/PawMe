@@ -15,6 +15,8 @@ export class ListingFormComponent implements OnInit {
   breedfromuser: any;
   agefromuser: any;
   locationfromuser: any;
+  genderfromuser: string;
+  sizefromuser: string;
 
   constructor() { }
 
@@ -23,13 +25,9 @@ export class ListingFormComponent implements OnInit {
     this.ListingForm = new FormGroup({
       name: new FormControl('', [
         Validators.required,
-        Validators.minLength(2),
-        Validators.maxLength(20)
       ]),
       breed: new FormControl('', [
         Validators.required,
-        Validators.minLength(4),
-        Validators.maxLength(30)
       ]),
       age: new FormControl('', [
         Validators.required,
@@ -38,8 +36,14 @@ export class ListingFormComponent implements OnInit {
       ]),
       location: new FormControl('', [
         Validators.required,
-        Validators.minLength(5),
-        Validators.maxLength(30)
+        Validators.minLength(3),
+        Validators.maxLength(50)
+      ]),
+      gender: new FormControl('', [
+        Validators.required
+      ]),
+      size: new FormControl('', [
+        Validators.required
       ])
     });
 

@@ -19,14 +19,11 @@
         </div>
         <ion-item color="transparent" lines="none">
           <ion-label color="primary" fixed><ion-icon name="location-outline"></ion-icon></ion-label>
-          <ion-input placeholder="Address" required pattern="^(?![\s.]+$)[a-zA-Z\s.]*$" formControlName="address" [(ngModel)]="addressfromuser"></ion-input>
+          <ion-input placeholder="Address" required  formControlName="address" [(ngModel)]="addressfromuser"></ion-input>
         </ion-item>
         <div>
           <p *ngIf="RegisterForm.get('address').hasError('required') && RegisterForm.get('address').touched">
             Address is required
-          </p>
-          <p *ngIf="RegisterForm.get('address').hasError('pattern')">
-            Address is invalid
           </p>
         </div>
         <ion-item color="transparent" lines="none">
