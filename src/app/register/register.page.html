@@ -1,30 +1,73 @@
+
 <ion-content [fullscreen]="true">
   <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
-    <ion-list class="ion-margin">
-      <ion-list-header><ion-img src="assets/images/registerBanner.png"></ion-img></ion-list-header>
-      <ion-text><p>Please enter your personal information</p></ion-text>
-      <ion-item color="transparent" lines="none">
-        <ion-label color="primary" fixed><ion-icon name="person-outline"></ion-icon></ion-label>
-        <ion-input placeholder="Fullname"></ion-input>
-      </ion-item>
-      <ion-item color="transparent" lines="none">
-        <ion-label color="primary" fixed><ion-icon name="location-outline"></ion-icon></ion-label>
-        <ion-input placeholder="Address"></ion-input>
-      </ion-item>
-      <ion-item color="transparent" lines="none">
-        <ion-label color="primary" fixed><ion-icon name="call-outline"></ion-icon></ion-label>
-        <ion-input type="tel" placeholder="Contact Number"></ion-input>
-      </ion-item>
-      <ion-item color="transparent" lines="none">
-        <ion-label color="primary" fixed><ion-icon name="mail-outline"></ion-icon></ion-label>
-        <ion-input type="email" placeholder="Email Address"></ion-input>
-      </ion-item>
-      <ion-item color="transparent" lines="none">
-        <ion-label color="primary" fixed><ion-icon name="lock-closed-outline"></ion-icon></ion-label>
-        <ion-input type="password" placeholder="Password"></ion-input>
-      </ion-item>
-      <ion-button expand="block" fill="outline" shape="round" color="primary" (click)="home()">Register</ion-button>
-      <ion-text>Have an account? </ion-text><ion-text color="primary" (click)="userLogin()"><u>Login</u></ion-text>
-    </ion-list>
+    <form [formGroup]="RegisterForm">
+      <ion-list class="ion-margin">
+        <ion-list-header><ion-img src="assets/images/registerBanner.png"></ion-img></ion-list-header>
+        <ion-text><p>Please enter your personal information</p></ion-text>
+        <ion-item color="transparent" lines="none">
+          <ion-label color="primary" fixed><ion-icon name="person-outline"></ion-icon></ion-label>
+          <ion-input type="text" placeholder="Fullname" required pattern="^(?![\s.]+$)[a-zA-Z\s.]*$" formControlName="fname" [(ngModel)]="fnamefromuser"></ion-input>
+        </ion-item>
+        <div>
+          <p *ngIf="RegisterForm.get('fname').hasError('required') && RegisterForm.get('fname').touched">
+            Fullname is required
+          </p>
+          <p *ngIf="RegisterForm.get('fname').hasError('pattern')">
+            Fullname is invalid
+          </p>
+        </div>
+        <ion-item color="transparent" lines="none">
+          <ion-label color="primary" fixed><ion-icon name="location-outline"></ion-icon></ion-label>
+          <ion-input placeholder="Address" required pattern="^(?![\s.]+$)[a-zA-Z\s.]*$" formControlName="address" [(ngModel)]="addressfromuser"></ion-input>
+        </ion-item>
+        <div>
+          <p *ngIf="RegisterForm.get('address').hasError('required') && RegisterForm.get('address').touched">
+            Address is required
+          </p>
+          <p *ngIf="RegisterForm.get('address').hasError('pattern')">
+            Address is invalid
+          </p>
+        </div>
+        <ion-item color="transparent" lines="none">
+          <ion-label color="primary" fixed><ion-icon name="call-outline"></ion-icon></ion-label>
+          <ion-input type="tel" placeholder="Contact Number" required pattern="^(09|\+639)\d{9}$" formControlName="cnum" [(ngModel)]="cnum"></ion-input>
+        </ion-item>
+        <div>
+          <p *ngIf="RegisterForm.get('cnum').hasError('required') && RegisterForm.get('cnum').touched">
+            Contact number is required
+          </p>
+          <p *ngIf="RegisterForm.get('cnum').hasError('pattern')">
+            Contact number is invalid
+          </p>
+        </div>
+        <ion-item color="transparent" lines="none">
+          <ion-label color="primary" fixed><ion-icon name="mail-outline"></ion-icon></ion-label>
+          <ion-input type="email" placeholder="Email Address" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" formControlName="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <div>
+          <p *ngIf="RegisterForm.get('email').hasError('required') && RegisterForm.get('email').touched">
+            Email is required
+          </p>
+          <p *ngIf="RegisterForm.get('email').hasError('pattern')">
+            Email is invalid
+          </p>
+        </div>
+        <ion-item color="transparent" lines="none">
+          <ion-label color="primary" fixed><ion-icon name="lock-closed-outline"></ion-icon></ion-label>
+          <ion-input type="password" placeholder="Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" formControlName="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <div>
+          <p *ngIf="RegisterForm.get('password').hasError('required') && RegisterForm.get('password').touched">
+            Password is required
+          </p>
+          <p *ngIf="RegisterForm.get('password').hasError('pattern')">
+            Minimum eight characters, at least one letter, one number and one special character
+          </p>
+        </div>
+        <ion-button expand="block" fill="outline" shape="round" color="primary" (click)="home()">Register</ion-button>
+        <ion-text>Have an account? </ion-text><ion-text color="primary" (click)="userLogin()"><u>Login</u></ion-text>
+      </ion-list>
+    </form>
   </div>
 </ion-content>
