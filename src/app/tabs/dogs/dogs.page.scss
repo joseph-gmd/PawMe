@@ -1,0 +1,33 @@
+ion-content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    ion-grid{
+        padding: 0;
+        ion-row{
+            padding: 0;
+            
+            ion-slides{
+                --bullet-background: var(--ion-color-medium);
+                --bullet-background-active: var(--ion-color-primary-contrast);
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 300px;
+                    background: var(--ion-color-tertiary);
+                }
+            }
+            ion-button{
+                z-index: 2;
+                position: absolute;
+                margin: auto;
+            }
+        }
+    }
+    ion-card-content{
+        ion-text{
+            p{
+                text-align: justify;
+                font-size: medium;
+            }
+        }
+    }
+}

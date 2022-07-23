@@ -24,7 +24,7 @@
     <ion-row>
       <ion-slides [options]="slideOpts">
         <ion-slide *ngFor="let item of popularDogs">
-          <ion-card [routerLink]="['/', 'tabs', 'items', item.id]">
+          <ion-card [routerLink]="['/', 'tabs', 'dogs', item.id]">
             <ion-card-header>
               <img [src]="item?.img" />
             </ion-card-header>
@@ -50,7 +50,7 @@
     <ion-row>
       <ion-slides [options]="slideOpts1" class="featured">
           <ion-slide class="featured" *ngFor="let item of findShiba(popularDogs)">
-            <ion-card [routerLink]="['/', 'tabs', 'items', item.id]">
+            <ion-card [routerLink]="['/', 'tabs', 'dogs', item.id]">
               <ion-card-header>
                 <img [src]="item?.img" />
               </ion-card-header>
@@ -76,7 +76,7 @@
     <ion-row>
       <ion-slides [options]="slideOpts1" class="featured">
           <ion-slide class="featured" *ngFor="let item of locBats(popularDogs)">
-            <ion-card [routerLink]="['/', 'tabs', 'items', item.id]">
+            <ion-card [routerLink]="['/', 'tabs', 'dogs', item.id]">
               <ion-card-header>
                 <img [src]="item?.img" />
               </ion-card-header>
@@ -85,7 +85,7 @@
                   <ion-label>
                     {{item?.name}}
                   </ion-label>
-                  <ion-text class="size" color="primary">{{item?.age}} y.o.</ion-text>
+                  <ion-text class="size" color="primary">{{item?.gender}}</ion-text>
                 </ion-item>
               </ion-card-content>
             </ion-card>

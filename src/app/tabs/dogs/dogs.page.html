@@ -1,9 +1,39 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>dogs</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
 
-<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-button fill="clear" class="ion-margin" (click)="navCtrl.back()">
+        <ion-icon slot="icon-only" name="arrow-back-outline" size="larger"></ion-icon>
+      </ion-button>
+      <ion-slides pager="true">
+        <ion-slide *ngFor="let dog1 of [1, 2]">
+          <img [src]="dog?.img" />
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
 
+  <ion-card>
+    <ion-card-header>
+      <ion-row>
+        <ion-col size="9">
+          <ion-card-title>{{dog?.name}}</ion-card-title>
+          <ion-card-subtitle color="primary">{{dog?.breed}}</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="3">
+          <ion-text color="primary"><h3>{{dog?.age}} y.o.</h3></ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text><p>Hello my future fur parent, my name is {{dog?.name}}. My breed is {{dog?.breed}} and I am currently {{dog?.age}} years old. My gender is {{dog?.gender}}.
+        I am identified as a {{dog?.size}} dog. My current location is at {{dog?.location}}, Batangas. I hope that you will treat me well. </p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="full" fill="solid" shape="round" color="primary">Adopt Me</ion-button>
+  </ion-toolbar>
+</ion-footer>

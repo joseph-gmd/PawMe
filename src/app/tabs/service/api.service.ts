@@ -13,4 +13,9 @@ export class ApiService {
   ];
 
   constructor() { }
+
+  getDogs(id) {
+    const dog = this.popularDogs.find(x => x.id == id);
+    return dog;
+  }
 }
