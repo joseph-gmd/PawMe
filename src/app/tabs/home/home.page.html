@@ -67,6 +67,32 @@
       </ion-slides>
     </ion-row>
   </ion-grid>
+
+  <ion-grid class="ion-margin-top">
+    <ion-item lines="none" color="light">
+      <ion-label class="title">Dogs in Batangas City</ion-label>
+      <ion-button slot="end" size="small" shape="round" color="primary">View All</ion-button>
+    </ion-item>
+    <ion-row>
+      <ion-slides [options]="slideOpts1" class="featured">
+          <ion-slide class="featured" *ngFor="let item of locBats(popularDogs)">
+            <ion-card [routerLink]="['/', 'tabs', 'items', item.id]">
+              <ion-card-header>
+                <img [src]="item?.img" />
+              </ion-card-header>
+              <ion-card-content>
+                <ion-item lines="none">
+                  <ion-label>
+                    {{item?.name}}
+                  </ion-label>
+                  <ion-text class="size" color="primary">{{item?.age}} y.o.</ion-text>
+                </ion-item>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button (click)="createListing()">
       <ion-icon name="add"></ion-icon>

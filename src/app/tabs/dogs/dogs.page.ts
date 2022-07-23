@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { NavController } from '@ionic/angular';
+import { ApiService } from '../service/api.service';
 
 @Component({
   selector: 'app-dogs',
@@ -7,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogsPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public navCtrl: NavController,
+    private route: ActivatedRoute,
+    private apiService:  ApiService
+  ) { }
 
   ngOnInit() {
   }
