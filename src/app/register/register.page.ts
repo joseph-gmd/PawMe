@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Validators, FormControl, FormGroup, FormBuilder } from '@angular/forms';
+import { LoadingController, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-register',
@@ -18,7 +19,7 @@ export class RegisterPage implements OnInit {
   emailfromuser: any;
   passwordfromuser: any;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private loadingCtrl: LoadingController, private navCtrl: NavController) { }
 
   ngOnInit() {
 
@@ -42,10 +43,22 @@ export class RegisterPage implements OnInit {
 
   }
 
+  private loading;
+
   userLogin() {
     this.router.navigate(['/login']);
   };
   home() {
-    this.router.navigate(['/tabs']);
-  };
+    this.loadingCtrl.create({
+      message: 'Logging In...'
+    }).then((overlay) => {
+      this.loading = overlay;
+      this.loading.present();
+    });
+    setTimeout(() => {
+      this.loading.dismiss();
+      this.navCtrl.navigateRoot('/tabs');
+    }, 3000
+    );
+  }
 }

@@ -52,14 +52,14 @@
         </div>
         <ion-item color="transparent" lines="none">
           <ion-label color="primary" fixed><ion-icon name="lock-closed-outline"></ion-icon></ion-label>
-          <ion-input type="password" placeholder="Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" formControlName="password" [(ngModel)]="password"></ion-input>
+          <ion-input type="password" placeholder="Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" formControlName="password" [(ngModel)]="password"></ion-input>
         </ion-item>
         <div>
           <p *ngIf="RegisterForm.get('password').hasError('required') && RegisterForm.get('password').touched">
             Password is required
           </p>
           <p *ngIf="RegisterForm.get('password').hasError('pattern')">
-            Minimum eight characters, at least one letter, one number and one special character
+            Minimum eight characters, at least one letter and one number
           </p>
         </div>
         <ion-button expand="block" fill="outline" shape="round" color="primary" (click)="home()">Register</ion-button>
