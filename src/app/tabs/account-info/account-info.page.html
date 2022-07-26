@@ -1,0 +1,46 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-button fill="clear" slot="start" size="small" (click)="account()"><ion-icon color="light" name="arrow-back-outline"></ion-icon></ion-button>
+    <ion-title>Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="height: 100%; display: block;">
+  <ion-item lines="none" class="ion-text-center">
+    <p>Edit your information here.</p>
+  </ion-item>
+  <form [formGroup]="EditForm">
+    <ion-item>
+      <ion-label position="stacked">Fullname</ion-label>
+      <ion-input type="text" placeholder="Input your new fullname" required pattern="^(?![\s.]+$)[a-zA-Z\s.]*$" formControlName="fname" [(ngModel)]="fnamefromuser"></ion-input>
+      <div>
+        <p *ngIf="EditForm.get('fname').hasError('required') && EditForm.get('fname').touched">
+          Fullname is required
+        </p>
+        <p *ngIf="EditForm.get('fname').hasError('pattern')" color="red">
+          Fullname is invalid
+        </p>
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Address</ion-label>
+      <ion-input placeholder="Input your new address" required formControlName="address" [(ngModel)]="addressfromuser"></ion-input>
+      <div>
+        <p *ngIf="EditForm.get('address').hasError('required') && EditForm.get('address').touched">
+          Address is required
+        </p>
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Contact Number</ion-label>
+      <ion-input value="+639(current number)" disabled></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input value="currentemail@pawme.com" disabled></ion-input>
+    </ion-item>
+  </form>
+  <ion-button expand="block" shape="round" color="primary">Save</ion-button>
+</div>
+</ion-content>

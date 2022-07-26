@@ -29,4 +29,8 @@ export class AccountPage implements OnInit {
     }, 3000
     );
   }
+
+  accountInfo() {
+    this.router.navigate(['/tabs/account-info']);
+  }
 }
