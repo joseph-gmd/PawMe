@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'create-listing',
     loadChildren: () => import('./create-listing/create-listing.module').then( m => m.CreateListingPageModule)
+  },  {
+    path: 'search',
+    loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
   },
+
 
 ];
 

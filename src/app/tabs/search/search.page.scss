@@ -1,0 +1,18 @@
+ion-header {
+    ion-toolbar {
+        padding-top: 12px;
+        ion-searchbar {
+            --border-radius: 20px;
+            --color: rgb(37, 31, 31);
+            --icon-color: rgb(37, 31, 31);
+        }
+    }
+}
+
+ion-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    p {
+        font-size: large;
+        color: rgb(37, 31, 31);
+    }
+}

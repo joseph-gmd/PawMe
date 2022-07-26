@@ -1,0 +1,17 @@
+<ion-header color="primary">
+  <ion-toolbar color="primary">
+    <ion-button fill="clear" slot="start" size="small" (click)="home()"><ion-icon color="light" name="arrow-back-outline"></ion-icon></ion-button>
+    <ion-searchbar color="light" animated [(ngModel)]="searchTerm"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let item of popularDogs | filter:searchTerm" [routerLink]="['/', 'tabs', 'dogs', item.id]">
+        <ion-avatar slot="start">
+          <img [src]="item?.img" />
+        </ion-avatar>
+        <p>{{item?.name}} the {{item?.breed}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

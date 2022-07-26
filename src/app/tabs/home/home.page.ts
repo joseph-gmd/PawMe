@@ -18,7 +18,7 @@ export class HomePage implements OnInit {
   };
   popularDogs: any [] = [];
 
-  constructor(private router : Router, public apiService: ApiService) { }
+  constructor(private router: Router, public apiService: ApiService) { }
 
   findShiba(popularDogs: any []) {
     return popularDogs.filter(popularDogs => popularDogs.breed == 'Shiba Inu');
@@ -28,7 +28,10 @@ export class HomePage implements OnInit {
   }
 
   createListing() {
-    this.router.navigate(['/tabs/create-listing'])
+    this.router.navigate(['/tabs/create-listing']);
+  }
+  search() {
+    this.router.navigate(['/tabs/search']);
   }
   ngOnInit() {
     this.popularDogs = this.apiService.popularDogs;

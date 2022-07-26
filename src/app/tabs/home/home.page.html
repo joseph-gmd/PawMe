@@ -1,12 +1,15 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar color="primary">
-    <ion-item lines="none" color="primary">
-      <ion-title>Adopt a dog</ion-title>
+  <ion-list lines="none">
+    <ion-item color="primary">
+      <ion-label>Adopt a dog</ion-label>
+      <ion-avatar slot="end">
+        <ion-img src="assets/images/logo.png"></ion-img>
+      </ion-avatar>
     </ion-item>
-    <ion-item lines="none" color="primary">
-      <ion-searchbar color="light" showCancelButton="focus" animated></ion-searchbar>
-    </ion-item>
-  </ion-toolbar>
+  </ion-list>
+      <div class="popover">
+        <ion-searchbar color="light" animated (click)="search()"></ion-searchbar>
+      </div>
 </ion-header>
 
 <ion-content [fullscreen]="true">
