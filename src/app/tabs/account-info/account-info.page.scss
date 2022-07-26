@@ -1,16 +1,18 @@
 ion-content {
-    ion-item {
-        padding: 10px;
+    ion-item.head {
         p {
             font-size: small;
         }
     }
     form {
-        div {
-            p {
-                color: red;
-                font-size: x-small;
-                text-align: start;
+        ion-item {
+            padding: 10px;
+            div {
+                p {
+                    color: red;
+                    font-size: x-small;
+                    text-align: start;
+                }
             }
         }
     }
