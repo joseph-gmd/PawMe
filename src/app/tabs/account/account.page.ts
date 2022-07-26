@@ -33,4 +33,7 @@ export class AccountPage implements OnInit {
   accountInfo() {
     this.router.navigate(['/tabs/account-info']);
   }
+  settings() {
+    this.router.navigate(['/tabs/settings']);
+  }
 }
