@@ -20,7 +20,7 @@
     <ion-row>
       <ion-slides [options]="slideOpts">
         <ion-slide *ngFor="let item of popularDogs">
-          <ion-card [routerLink]="['/', 'tabs', 'dogs', item.id]">
+          <ion-card [routerLink]="['/', 'tabs', 'dogs', item.id]"  appLongPress (press)="lpEvent()">
             <ion-card-header>
               <img [src]="item?.img" />
             </ion-card-header>
@@ -45,7 +45,7 @@
     <ion-row>
       <ion-slides [options]="slideOpts1" class="featured">
           <ion-slide class="featured" *ngFor="let item of findShiba(popularDogs)">
-            <ion-card [routerLink]="['/', 'tabs', 'dogs', item.id]">
+            <ion-card [routerLink]="['/', 'tabs', 'dogs', item.id]" appLongPress (press)="lpEvent()">
               <ion-card-header>
                 <img [src]="item?.img" />
               </ion-card-header>
@@ -70,7 +70,7 @@
     <ion-row>
       <ion-slides [options]="slideOpts1" class="featured">
           <ion-slide class="featured" *ngFor="let item of locBats(popularDogs)">
-            <ion-card [routerLink]="['/', 'tabs', 'dogs', item.id]">
+            <ion-card [routerLink]="['/', 'tabs', 'dogs', item.id]" appLongPress (press)="lpEvent()">
               <ion-card-header>
                 <img [src]="item?.img" />
               </ion-card-header>
