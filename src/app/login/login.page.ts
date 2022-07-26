@@ -29,7 +29,7 @@ export class LoginPage implements OnInit {
     setTimeout(() => {
       this.loading.dismiss();
       this.navCtrl.navigateRoot('/tabs');
-    }, 3000
+    }, 1000
     );
   }
 }

@@ -55,7 +55,7 @@ export class AccountInfoPage implements OnInit {
     setTimeout(() => {
       this.loading.dismiss();
       this.navCtrl.navigateRoot('/tabs/account-info');
-    }, 2500
+    }, 2000
     );
   }
 }

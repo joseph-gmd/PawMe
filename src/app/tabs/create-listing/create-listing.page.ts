@@ -30,7 +30,7 @@ export class CreateListingPage implements OnInit {
     setTimeout(() => {
       this.loading.dismiss();
       this.navCtrl.navigateRoot('/tabs/home');
-    }, 3000
+    }, 2000
     );
   }
 }

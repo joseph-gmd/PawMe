@@ -26,7 +26,7 @@ export class AccountPage implements OnInit {
     setTimeout(() => {
       this.loading.dismiss();
       this.navCtrl.navigateRoot('/login');
-    }, 3000
+    }, 1000
     );
   }
 
