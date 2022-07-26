@@ -2,12 +2,13 @@
   <ion-toolbar color="primary">
     <ion-button fill="clear" slot="start" size="small" (click)="account()"><ion-icon color="light" name="arrow-back-outline"></ion-icon></ion-button>
     <ion-title>Account</ion-title>
+    <ion-button fill="clear" slot="end" size="small" (click)="saveEdit()"><ion-text color="light">Save</ion-text></ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div style="height: 100%; display: block;">
-  <ion-item lines="none" class="ion-text-center">
+  <ion-item lines="none" class="head">
     <p>Edit your information here.</p>
   </ion-item>
   <form [formGroup]="EditForm">
@@ -41,6 +42,5 @@
       <ion-input value="currentemail@pawme.com" disabled></ion-input>
     </ion-item>
   </form>
-  <ion-button expand="block" shape="round" color="primary">Save</ion-button>
 </div>
 </ion-content>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NavController } from '@ionic/angular';
+import { LoadingController, NavController } from '@ionic/angular';
 import { Validators, FormControl, FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
@@ -18,7 +18,7 @@ export class AccountInfoPage implements OnInit {
   emailfromuser: any;
   passwordfromuser: any;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private navCtrl: NavController, private loadingCtrl: LoadingController) { }
 
   ngOnInit() {
     this.EditForm = new FormGroup ({
@@ -40,7 +40,22 @@ export class AccountInfoPage implements OnInit {
     });
   }
 
+  private loading;
+
   account() {
       this.router.navigate(['/tabs/account']);
+  }
+  saveEdit() {
+    this.loadingCtrl.create({
+      message: 'Saving...'
+    }).then((overlay) => {
+      this.loading = overlay;
+      this.loading.present();
+    });
+    setTimeout(() => {
+      this.loading.dismiss();
+      this.navCtrl.navigateRoot('/tabs/account-info');
+    }, 2500
+    );
   }
 }
