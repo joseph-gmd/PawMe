@@ -8,5 +8,6 @@
 ### SDG
 
 ### Objectives
+<p align = "justify"> "The objective of the mobile application "PawMe" is to provide a platform that feeds users about dogs that are up for adoption in Batangas City area. Through the use of this application, pet owners will be able to look for adopted fur babies online in a simple, efficient, and feasible way. </p> 
 
 ### Significance of the Study
