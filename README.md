@@ -16,6 +16,7 @@
 
 ### Sustainable Development Goals (SDGs)
 <p align = "justify"> The SDGs which our project aims to accomplish are Good Health and Well-Being, as well as Sustainable Cities and Communities. The preceding provides additional information on these SDGs. </p>
+<img src="Images/sdg3.png">
 
 ### Objectives
 <p align = "justify"> "The objective of the mobile application "PawMe" is to provide a platform that feeds users about dogs that are up for adoption in Batangas City area. Through the use of this application, pet owners will be able to look for adopted fur babies online in a simple, efficient, and feasible way. </p> 
