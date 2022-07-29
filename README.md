@@ -1,3 +1,5 @@
+<img src="Images/pawmeheader.png">
+
 <h2 align="center"> PAW ME: A Dog Adoption Application. </h2>
 
 ### Introduction
