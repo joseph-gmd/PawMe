@@ -11,7 +11,9 @@ However, many people overlook the number of stray animals who suffer the same fa
 These stray canines wander the streets and frequently try to find any food scraps in canals and trash cans. If they're lucky, they are saved and taken in by compassionate people who are prepared to welcome them into their households and provide them with the shelter and comfort they require.
 
 As a result, the team will focus to design and create a mobile application that will allow users to adopt dogs in the Batangas area. Ionic Framework and other tools are used in the project's development. </p>
-### SDG
+
+### Sustainable Development Goals (SDGs)
+<p align = "justify"> The SDGs which our project aims to accomplish are Good Health and Well-Being, as well as Sustainable Cities and Communities. The preceding provides additional information on these SDGs. </p>
 
 ### Objectives
 <p align = "justify"> "The objective of the mobile application "PawMe" is to provide a platform that feeds users about dogs that are up for adoption in Batangas City area. Through the use of this application, pet owners will be able to look for adopted fur babies online in a simple, efficient, and feasible way. </p> 
