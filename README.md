@@ -23,10 +23,19 @@
 <img align = "center" src="Images/sdg.png">
 ### Objectives
 <p align = "justify"> "The objective of the mobile application "PawMe" is to provide a platform that feeds users about dogs that are up for adoption in Batangas City area. Through the use of this application, pet owners will be able to look for adopted fur babies online in a simple, efficient, and feasible way. </p> 
-<p align ="justify"> " The researchers specifially aim the following objectives: </p>
-<p align ="justify"> " 1. To let pet lovers search for fur babies online that they can adopt. </p>
-<p align ="justify"> " 2. To transform pet adoption processes into an easy, fast and convenient way. </p>
-<p align ="justify"> " 3. To streamline transaction between pet adopters, and animal shelters staffs and workers in terms of pet adoption. </p>
-<p align ="justify"> " 4. To equip animal shelters and rescues with an application to give updates on pets that are up for adoption. </p>
+<p align ="justify">  The researchers specifially aim the following objectives: </p>
+<p align ="justify">  1. To let pet lovers search for fur babies online that they can adopt. </p>
+<p align ="justify">  2. To transform pet adoption processes into an easy, fast and convenient way. </p>
+<p align ="justify">  3. To streamline transaction between pet adopters, and animal shelters staffs and workers in terms of pet adoption. </p>
+<p align ="justify">  4. To equip animal shelters and rescues with an application to give updates on pets that are up for adoption. </p>
 
 ### Significance of the Study
+<p align ="justify"> The success of the project is deemed beneficial to the following individuals or groups: </p>
+
+**Animal Shelters.** The success of the platform will offer them a convenient way to look for a possible owner of pets they have rescued. The adoption process will also be faster and they can also address multiple requests for adoption every day.
+
+**Pet Lovers/Owners.** They can now look for pets they can adopt in a fast and convenient way. They would not need to personally look for animal shelters which consume valuable time and effort.
+
+**Researchers. ** The success of the study will greatly contribute to their knowledge, skills, and experience as programmers.
+
+**Future Researchers.** The study can serve as their basis in developing updates or their version of the project.
