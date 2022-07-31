@@ -23,5 +23,10 @@
 <img align = "center" src="Images/sdg.png">
 ### Objectives
 <p align = "justify"> "The objective of the mobile application "PawMe" is to provide a platform that feeds users about dogs that are up for adoption in Batangas City area. Through the use of this application, pet owners will be able to look for adopted fur babies online in a simple, efficient, and feasible way. </p> 
+<p align ="justify"> " The researchers specifially aim the following objectives: </p>
+<p align ="justify"> " 1. To let pet lovers search for fur babies online that they can adopt. </p>
+<p align ="justify"> " 2. To transform pet adoption processes into an easy, fast and convenient way. </p>
+<p align ="justify"> " 3. To streamline transaction between pet adopters, and animal shelters staffs and workers in terms of pet adoption. </p>
+<p align ="justify"> " 4. To equip animal shelters and rescues with an application to give updates on pets that are up for adoption. </p>
 
 ### Significance of the Study
