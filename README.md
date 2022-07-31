@@ -36,6 +36,6 @@
 
 **Pet Lovers/Owners.** They can now look for pets they can adopt in a fast and convenient way. They would not need to personally look for animal shelters which consume valuable time and effort.
 
-**Researchers. ** The success of the study will greatly contribute to their knowledge, skills, and experience as programmers.
+**Researchers.** The success of the study will greatly contribute to their knowledge, skills, and experience as programmers.
 
 **Future Researchers.** The study can serve as their basis in developing updates or their version of the project.
