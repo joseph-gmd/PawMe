@@ -18,12 +18,12 @@
 <p align = "justify"> The SDGs which our project aims to accomplish are Good Health and Well-Being, as well as Sustainable Cities and Communities. The preceding provides additional information on these SDGs. </p>
 <h3 align="center"> Goal 3: Good Health and Well-Being </h3> 
 <img align = "center" src="Images/sdg3.jpg">
-- <p align = "justify">Good welfare in animals increases their immuno-competence and resistance to zoonotic diseases that can be transferred to humans.</p>
-- <p align = "justify">Owning a pet can be associated with improved physical and psychological health. </p>
+* <p align = "justify">Good welfare in animals increases their immuno-competence and resistance to zoonotic diseases that can be transferred to humans.</p>
+* <p align = "justify">Owning a pet can be associated with improved physical and psychological health. </p>
 
 <h3 align="center"> Goal 11: Sustainable Cities and Communities </h3> 
 <img align = "center" src="Images/sdg.png">
-- <p align ="justify">   Cities can be designed to be pet friendly and responsible ownership reduces stratdogs with its associated human health aspect </p>
+* <p align ="justify">   Cities can be designed to be pet friendly and responsible ownership reduces stratdogs with its associated human health aspect </p>
 
 
 ### Objectives 
