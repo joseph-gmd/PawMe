@@ -23,7 +23,7 @@
 
 <h3 align="center"> Goal 11: Sustainable Cities and Communities </h3> 
 <img align = "center" src="Images/sdg.png">
-- <p align = "justify"> Cities can be designed to be pet friendly and responsible ownership reduces stray dogs with its associated human health aspect. </p>
+- <p align ="justify">   Cities can be designed to be pet friendly and responsible ownership reduces stratdogs with its associated human health aspect </p>
 
 
 ### Objectives 
