@@ -18,9 +18,12 @@
 <p align = "justify"> The SDGs which our project aims to accomplish are Good Health and Well-Being, as well as Sustainable Cities and Communities. The preceding provides additional information on these SDGs. </p>
 <h3 align="center"> Goal 3: Good Health and Well-Being </h3> 
 <img align = "center" src="Images/sdg3.jpg">
+* Good welfare in animals increases their immuno-competence and resistance to zoonotic diseases that can be transferred to humans.
+* Owning a pet can be associated with improved physical and psychological health.
 
 <h3 align="center"> Goal 11: Sustainable Cities and Communities </h3> 
 <img align = "center" src="Images/sdg.png">
+* Cities can be designed to be pet friendly and responsible ownership reduces stray dogs with its associated human health aspect. 
 ### Objectives
 <p align = "justify"> "The objective of the mobile application "PawMe" is to provide a platform that feeds users about dogs that are up for adoption in Batangas City area. Through the use of this application, pet owners will be able to look for adopted fur babies online in a simple, efficient, and feasible way. </p> 
 <p align ="justify">  The researchers specifially aim the following objectives: </p>
